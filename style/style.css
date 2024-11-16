@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  /* background-color: #eeeeee; */
+  /* background: linear-gradient(to right, #e4eee9, #93a5ce); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hidden {
+  display: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  height: auto;
+  position: sticky;
+  /* right: 0;
+  left: 0; */
+  color: white;
+}
+.show-nav {
+  padding: 12px;
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  color: black;
+}
+.name {
+  font-family: "Great Vibes", cursive;
+  margin-left: 8px;
+  font-size: 1.3rem;
+}
+ul {
+  list-style-type: none;
+  display: block;
+}
+.nav-links {
+  display: none;
+}
+.nav-links li {
+  /* display: inline-block; */
+  padding: 10px;
+}
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(70, 151, 179);
+  text-shadow: rgb(127, 230, 195) 1px 0 10px;
+}
+
+.nav-links li a:hover {
+  color: #0088a9;
+  text-shadow: rgb(54, 107, 109) 0 0 10px;
+}
+.show-links {
+  display: block;
+}
+.intro-section {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/code.jpg");
+  background-attachment: fixed;
+  background-position: center top;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.intro-text {
+  margin-left: 60px;
+  padding-top: 160px;
+}
+.important-text {
+  /* background: #4bc2cf;
+  background: linear-gradient(to top left, #4bc2cf 0%, #8fcf46 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  color: #734463;
+  font-size: 30px;
+  font-weight: bold;
+}
+.my-name {
+  font-family: "Great Vibes", cursive;
+  color: #734463;
+  font-size: 50px;
+  font-weight: bold;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.media-links {
+  color: white;
+}
+.mobile,
+.mail,
+.git,
+.linked,
+.dev {
+  margin-right: 25px;
+  color: white;
+  transition: all 0.3s;
+}
+.mobile:hover,
+.mail:hover,
+.git:hover,
+.linked:hover,
+.dev:hover {
+  opacity: 0.5;
+}
+.intro-p {
+  font-size: 25px;
+}
+.intro-img {
+  width: 500px;
+}
+.avatar {
+  width: 100%;
+}
+.view-cv-btn {
+  padding: 15px 40px;
+  border: 1px solid #ff4a57;
+  color: #ff4a57;
+  transition: all 0.3s;
+}
+.view-cv-btn:hover {
+  color: black;
+  background-color: #ff4a57;
+}
+.my-skills {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills-section {
+  text-align: center;
+  height: 100%;
+}
+.card {
+  margin-top: 10px;
+  box-shadow: 0 5px 10px black;
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: white;
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+.card:hover {
+  box-shadow: 0 5px 5px black;
+  transform: scale(1.05);
+}
+.card-body {
+  padding: 10px;
+}
+.card-img {
+  width: 100px;
+}
+.card-text {
+  color: #a8a7a7;
+}
+.card-btn {
+  padding: 5px;
+  background-color: #5041fa;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  width: 80px;
+}
+.programming-heading,
+.vc-heading,
+.frameworks-heading {
+  font-size: 1.8rem;
+}
+.projects-section {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+.section-head {
+  text-align: center;
+}
+.projects-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid slateblue;
+  padding: 20px;
+  margin: 15px 5px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgb(43, 42, 42);
+  background-color: white;
+  transition: all 0.4s;
+}
+.project-card:hover {
+  box-shadow: 0 5px 5px black;
+  transform: scale(1.05);
+}
+.card-project-img {
+  width: 350px;
+}
+.project-img {
+  width: 100%;
+}
+.card-body {
+  max-width: 580px;
+}
+.contact-section {
+  display: flex;
+  justify-content: center;
+  /* display: grid;
+  grid-template-columns: 1fr; */
+  /* background: linear-gradient(to right, #fffcff, #d5fefd); */
+}
+.contacts-header {
+  text-align: center;
+}
+.contact-form {
+  display: inline-flex;
+  flex-direction: column;
+}
+input {
+  margin: 8px 0px;
+  padding: 10px;
+  border-radius: 13px;
+  border: none;
+  box-shadow: 0 0 5pt 0.5pt #d3d3d3;
+  font-size: 18px;
+}
+textarea {
+  margin: 8px 0px;
+  border-radius: 13px;
+  border: none;
+  box-shadow: 0 0 5pt 0.5pt #d3d3d3;
+  padding: 8px;
+  font-size: 18px;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .phone,
+.mail,
+.twitter,
+.linked {
+  width: 55px;
+} */
+/* .social-links {
+  margin: 0px 5px;
+  padding: 0px 15px;
+  color: black;
+  border-radius: 13px;
+} */
+.form-side {
+  padding: 0px 15px;
+  margin: 10px 0px;
+}
+.phone-number,
+.email,
+.twitter-img,
+.linkedin-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.phone-text,
+.email-text {
+  margin: 0px 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.send-btn {
+  margin: 12px 0px;
+  padding: 10px;
+  background-color: #1089ff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 13px;
+  color: white;
+  box-shadow: 0 0 5pt 0.5pt #d3d3d3;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.send-btn:hover {
+  opacity: 0.8;
+  box-shadow: -1px 1px 64px -9px rgba(22, 162, 237, 0.75);
+  -webkit-box-shadow: -1px 1px 64px -9px rgba(22, 162, 237, 0.75);
+  -moz-box-shadow: -1px 1px 64px -9px rgba(22, 162, 237, 0.75);
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+hr {
+  width: 80%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+    transition: all 0.6s;
+  }
+  .show-nav {
+    padding: 12px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .important-text {
+    color: #ff4a57;
+  }
+  .intro-section {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .intro-text {
+    display: inline-block;
+    width: 100%;
+    margin-left: 15px;
+  }
+  .intro-img {
+    display: none;
+  }
+  .project-card {
+    display: inline-block;
+    border: none;
+    padding: 15px;
+  }
+  .card-project-img {
+    width: auto;
+  }
+  .view-cv-btn {
+    padding: 15px 40px;
+    border: 1px solid #ff4a57;
+    color: #ff4a57;
+    transition: all 0.3s;
+  }
+  .view-cv-btn:hover {
+    color: black;
+    background-color: #ff4a57;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* .show-nav {
+    display: none;
+  } */
+}

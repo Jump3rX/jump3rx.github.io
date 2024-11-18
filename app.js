@@ -54,8 +54,8 @@ function closeNav() {
 function sendMail() {
   Email.send({
     Host: "smtp.elasticemail.com",
-    Username: "conradmax5@gmail.com",
-    Password: "D603C2764DA5BC17C4F82AC57B5889DB3389",
+    Username: "#",
+    Password: "#",
     To: "njoraconrad@gmail.com ",
     From: document.querySelector("#email").value,
     Subject: document.querySelector("#subject").value,
